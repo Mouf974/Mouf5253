@@ -1,1 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact & Devis — Kap'Créa</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+  <nav id="navbar" class="scrolled">
+    <a href="index.html" class="nav-logo">
+      <img src="logo-kapcrea.png" alt="Logo Kap'Créa" style="height: 50px;">
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="propos.html">À propos</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="nav-cta">Demander un devis</a>
+  </nav>
+
+  <section id="contact" style="padding: 160px 60px 100px;">
+    <div class="contact-info">
+      <p class="section-tag">✦ Contact</p>
+      <h1 class="hero-title" style="font-size: 3.5rem; margin-bottom: 30px;">Un projet ? <em>Parlons-en.</em></h1>
+      <p style="color: var(--warm-gray); margin-bottom: 40px;">Remplissez le formulaire ci-contre et nous vous répondrons sous 48h avec une proposition personnalisée.</p>
+      
+      <div class="contact-detail">
+        <div class="contact-detail-icon">📧</div>
+        <div>
+          <div class="contact-detail-label">Email</div>
+          <div class="contact-detail-val">contact@kapcrea.fr</div>
+        </div>
+      </div>
+    </div>
+
+    <form name="contact-pro" method="POST" data-netlify="true" class="contact-form">
+      <div class="form-row">
+        <div class="form-group">
+          <label>Prénom</label>
+          <input type="text" name="prenom" required placeholder="Votre prénom"/>
+        </div>
+        <div class="form-group">
+          <label>Nom</label>
+          <input type="text" name="nom" required placeholder="Votre nom"/>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" name="email" required placeholder="votre@email.fr"/>
+      </div>
+      <div class="form-group">
+        <label>Type de projet</label>
+        <select name="type_projet">
+          <option>Vêtements personnalisés</option>
+          <option>Cadeaux sur mesure</option>
+          <option>Broderie / Impression</option>
+          <option>Autre</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Message</label>
+        <textarea name="message" required placeholder="Décrivez votre besoin..."></textarea>
+      </div>
+      <button type="submit" class="form-submit">Envoyer le projet →</button>
+    </form>
+  </section>
+
+  <footer style="background: var(--charcoal); color: var(--cream); padding: 60px; display: flex; justify-content: space-between; align-items: center;">
+    <div class="footer-logo">Kap'<span>Créa</span></div>
+    <p class="footer-copy">© 2026 Kap'Créa — À votre écoute</p>
+  </footer>
+
+</body>
+</html>
