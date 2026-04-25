@@ -22,7 +22,7 @@ body {
 }
 
 /* ── CURSOR ── */
-* { cursor: none; }
+* { cursor: auto; }
 #cursor {
   position: fixed;
   width: 12px; height: 12px;
